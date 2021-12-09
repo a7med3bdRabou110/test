@@ -1,0 +1,157 @@
+.button, .main-section .right .middle-content a.signup, .main-section .right .middle-content a.signin {
+  display: block;
+  padding: 1rem;
+  margin: 0.8rem 0;
+  border: 0.1rem solid #1da1f5;
+  border-radius: 4rem;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  -ms-grid-rows: 1fr min-content;
+      grid-template-rows: 1fr -webkit-min-content;
+      grid-template-rows: 1fr min-content;
+}
+
+.main-section .left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png);
+}
+
+.main-section .left .left-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-section .left .left-content i {
+  font-size: 20rem;
+  color: #fff;
+}
+
+.main-section .right {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  position: relative;
+}
+
+.main-section .right .middle-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-section .right .middle-content i.fab.fa-twitter {
+  font-size: 4rem;
+  color: #d9d9d9;
+  margin-bottom: 2rem;
+}
+
+.main-section .right .middle-content h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #d9d9d9;
+  margin-bottom: 2rem;
+}
+
+.main-section .right .middle-content h4 {
+  font-size: 1.6rem;
+  color: #d9d9d9;
+  margin-bottom: 2rem;
+}
+
+.main-section .right .middle-content a.signup {
+  background-color: #1da1f5;
+  color: #FFF;
+}
+
+.main-section .right .middle-content a.signin {
+  background-color: #FFF;
+  color: #1da1f5;
+}
+
+.main-section footer {
+  grid-column: 1/-1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  padding: 1.5rem;
+}
+
+.main-section footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-section footer ul li {
+  padding: 0.5rem;
+  color: #cec9c9;
+}
+
+.main-section footer ul li a {
+  color: #d9d9d9;
+  font-size: 1.2rem;
+}
+
+.main-section footer ul li a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,123 @@
+//variables 
+$main-color:rgb(217, 217, 217);
+$second-color:#1da1f5;
+$third: rgb(29, 161, 242);
+.button {
+    display: block;
+    padding: 1rem;
+    margin: 0.8rem 0;
+    border: 0.1rem solid $second-color;
+    border-radius: 4rem;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    // background-color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    grid-template-rows: 1fr min-content;
+    //left section
+    .left {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png);
+        .left-content {
+            align-items: center;
+            i {
+                font-size: 20rem;
+                // width: 314px;
+                // height: 277px;
+                color: #fff;
+            }
+        }
+    }
+    //right section
+    .right {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        position: relative;
+        .middle-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            i.fab.fa-twitter {
+                font-size: 4rem;
+                color: $main-color;
+                margin-bottom: 2rem;
+            }
+            h1 {
+                font-size: 3rem;
+                line-height: 4rem;
+                color: $main-color;
+                margin-bottom: 2rem;
+            }
+            h4 {
+                font-size: 1.6rem;
+                color: $main-color;
+                margin-bottom: 2rem;
+            }
+            a.signup {
+                @extend .button;
+                background-color: $second-color;
+                color: #FFF;
+            }
+            a.signin {
+                @extend .button;
+                background-color: #FFF;
+                color: $second-color;
+            }
+        }
+    }
+    //footer 
+    footer {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        padding: 1.5rem;
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li {
+                padding: 0.5rem;
+                color: rgb(206, 201, 201);
+                a {
+                    color: $main-color;
+                    font-size: 1.2rem;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

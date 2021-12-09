@@ -1,0 +1,110 @@
+    //variables
+    $main-color:rgb(217, 217, 217);
+    $main-bg :rgba (20, 20, 20);
+    //global input 
+    .input {
+        height: 2.8rem;
+        background: none;
+        outline: none;
+        // border: none;
+        color: #fff;
+        border: 0.2rem solid $main-bg;
+        border-radius: 0.9rem;
+        padding-left: 0.5rem;
+    }
+    
+    .signup-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        height: 100vh;
+        form {
+            border: 0.3rem solid rgb(15, 15, 15);
+            padding: 2rem;
+            box-shadow: 0 10px 15px 20px rgb(10, 10, 10);
+            h1 {
+                font-size: 5rem;
+                margin-bottom: 1.5rem;
+                color: $main-color;
+            }
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 0.7rem;
+                position: relative;
+                .errorMessage {
+                    font-size: 1.6rem;
+                    color: #F00;
+                    font-weight: bolder;
+                }
+                label {
+                    font-size: 1.8rem;
+                    color: $main-color;
+                    margin-bottom: 0.5rem;
+                    cursor: pointer;
+                }
+                input {
+                    @extend .input;
+                    &::placeholder {
+                        margin: 1rem !important;
+                        font-size: 1.6rem;
+                        color: #cdcdcd;
+                    }
+                }
+                a {
+                    color: #fff;
+                    font-size: 1.3rem;
+                    text-align: right;
+                    margin-top: 0.5rem;
+                }
+                p {
+                    font-size: 1.6rem;
+                    color: #fff;
+                    a {
+                        color: #bcbcbc
+                    }
+                }
+                button.btn-signup {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.7rem;
+                    text-align: center!important;
+                    font-weight: bolder;
+                    color: #fff;
+                    background-color: #1da1f5;
+                    padding: .6rem;
+                    border-radius: 1rem;
+                    border: 0.2rem solid #1da1f5;
+                    cursor: pointer;
+                    transition: background-color, color 0.3s ease-in;
+                    &:hover {
+                        color: #1da1f5;
+                        background-color: #FFF;
+                    }
+                }
+                i {
+                    position: absolute;
+                    top: 32px;
+                    right: 10px;
+                    font-size: 1.6rem;
+                    cursor: pointer;
+                }
+            }
+            .form-control {
+                display: flex;
+                flex-direction: row;
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+                input {
+                    line-height: 2.8rem;
+                }
+                label {
+                    cursor: pointer;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }

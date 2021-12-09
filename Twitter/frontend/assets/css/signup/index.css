@@ -1,0 +1,160 @@
+.input, .signup-container form .form-group input {
+  height: 2.8rem;
+  background: none;
+  outline: none;
+  color: #fff;
+  border: 0.2rem solid rgba 20, 20, 20;
+  border-radius: 0.9rem;
+  padding-left: 0.5rem;
+}
+
+.signup-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  height: 100vh;
+}
+
+.signup-container form {
+  border: 0.3rem solid #0f0f0f;
+  padding: 2rem;
+  -webkit-box-shadow: 0 10px 15px 20px #0a0a0a;
+          box-shadow: 0 10px 15px 20px #0a0a0a;
+}
+
+.signup-container form h1 {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  color: #d9d9d9;
+}
+
+.signup-container form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 0.7rem;
+  position: relative;
+}
+
+.signup-container form .form-group .errorMessage {
+  font-size: 1.6rem;
+  color: #F00;
+  font-weight: bolder;
+}
+
+.signup-container form .form-group label {
+  font-size: 1.8rem;
+  color: #d9d9d9;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.signup-container form .form-group input::-webkit-input-placeholder {
+  margin: 1rem !important;
+  font-size: 1.6rem;
+  color: #cdcdcd;
+}
+
+.signup-container form .form-group input:-ms-input-placeholder {
+  margin: 1rem !important;
+  font-size: 1.6rem;
+  color: #cdcdcd;
+}
+
+.signup-container form .form-group input::-ms-input-placeholder {
+  margin: 1rem !important;
+  font-size: 1.6rem;
+  color: #cdcdcd;
+}
+
+.signup-container form .form-group input::placeholder {
+  margin: 1rem !important;
+  font-size: 1.6rem;
+  color: #cdcdcd;
+}
+
+.signup-container form .form-group a {
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.signup-container form .form-group p {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.signup-container form .form-group p a {
+  color: #bcbcbc;
+}
+
+.signup-container form .form-group button.btn-signup {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.7rem;
+  text-align: center !important;
+  font-weight: bolder;
+  color: #fff;
+  background-color: #1da1f5;
+  padding: .6rem;
+  border-radius: 1rem;
+  border: 0.2rem solid #1da1f5;
+  cursor: pointer;
+  -webkit-transition: background-color, color 0.3s ease-in;
+  transition: background-color, color 0.3s ease-in;
+}
+
+.signup-container form .form-group button.btn-signup:hover {
+  color: #1da1f5;
+  background-color: #FFF;
+}
+
+.signup-container form .form-group i {
+  position: absolute;
+  top: 32px;
+  right: 10px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.signup-container form .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.signup-container form .form-control input {
+  line-height: 2.8rem;
+}
+
+.signup-container form .form-control label {
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+/*# sourceMappingURL=index.css.map */
